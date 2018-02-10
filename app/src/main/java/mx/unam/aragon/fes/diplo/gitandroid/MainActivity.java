@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button boton1;
     private TextView textview1;
+    private Button boton2;
 
 
 
@@ -22,11 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
         boton1=findViewById(R.id.button);
         textview1=findViewById(R.id.textView);
+        boton2=findViewById(R.id.button2);
 
         boton1.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v){
                 textview1.setText("Sieg Heil");
+            }
+
+
+        });
+
+        boton2.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v){
+                textview1.setText("Diplomado Android");
             }
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v){
                 textview1.setText("Sieg Heil");
+                Toast.makeText(MainActivity.this, "Se cambió el mensaje en el textview",Toast.LENGTH_SHORT).show();
             }
 
 
